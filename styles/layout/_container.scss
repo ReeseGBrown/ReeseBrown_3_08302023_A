@@ -1,0 +1,50 @@
+.HowItWorks {
+    margin-left: 20px;
+    margin-right: $page_margin;
+}
+.instruction_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+    
+}
+.rounded-component {
+    background-color: rgb(241, 241, 241);
+    width: 90%;
+    padding-top: 10px;
+    padding-bottom:10px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.restaurant-background {
+    background-color: rgb(241, 241, 241);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+}
+.restaurant_card {
+    background-color: white;
+    width:100%;
+    a {
+        img {
+            background-color: black;
+            width:100px;
+            height:100px;
+        }
+    }
+    &__bottom {
+        display:flex;
+        flex-direction: row;
+        h3 {
+            justify-self: end;
+        }
+        &--p {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

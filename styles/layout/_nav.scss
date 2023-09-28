@@ -1,0 +1,16 @@
+.location {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color:rgb(228, 228, 228);
+}
+.explore {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(241, 241, 241);
+    margin-bottom:30px;
+    padding-bottom: 60px;
+}

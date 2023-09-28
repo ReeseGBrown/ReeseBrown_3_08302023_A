@@ -1,0 +1,101 @@
+* {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+* {
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.explore a {
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  text-decoration: none;
+  color: white;
+  width: 50%;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 30px;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid gray;
+}
+header img {
+  width: 200px;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(228, 228, 228);
+}
+
+.explore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(241, 241, 241);
+  margin-bottom: 30px;
+  padding-bottom: 60px;
+}
+
+.HowItWorks {
+  margin-left: 20px;
+  margin-right: 30px;
+}
+
+.instruction_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.rounded-component {
+  background-color: rgb(241, 241, 241);
+  width: 90%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.restaurant-background {
+  background-color: rgb(241, 241, 241);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+}
+
+.restaurant_card {
+  background-color: white;
+  width: 100%;
+}
+.restaurant_card a img {
+  background-color: black;
+  width: 100px;
+  height: 100px;
+}
+.restaurant_card__bottom {
+  display: flex;
+  flex-direction: row;
+}
+.restaurant_card__bottom h3 {
+  justify-self: end;
+}
+.restaurant_card__bottom--p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}/*# sourceMappingURL=main.css.map */
