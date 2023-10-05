@@ -3,6 +3,11 @@
   margin-right: 0px;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 * {
   font-family: "Raleway", sans-serif;
   font-family: "Roboto", sans-serif;
@@ -17,6 +22,7 @@
   padding-right: 15px;
   border-radius: 30px;
   text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 header {
@@ -25,10 +31,32 @@ header {
   align-items: center;
   padding-top: 15px;
   padding-bottom: 15px;
-  border-bottom: 2px solid gray;
+  border-bottom: 2px solid rgb(209, 209, 209);
 }
 header img {
   width: 200px;
+}
+
+footer {
+  background-color: rgb(61, 61, 61);
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+footer p {
+  color: white;
+}
+footer img {
+  width: 100px;
+  height: 30px;
+  object-fit: contain;
+  filter: invert(100%);
+}
+footer ul {
+  padding-left: 0;
+}
+footer li {
+  list-style: none;
 }
 
 .location {
@@ -66,9 +94,10 @@ header img {
   width: 90%;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-radius: 15px;
-  margin-bottom: 15px;
+  border-radius: 20px;
+  margin-bottom: 20px;
   text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .restaurant-background {
@@ -76,26 +105,68 @@ header img {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.card_list {
+  display: flex;
+  flex-direction: column;
 }
 
 .restaurant_card {
   background-color: white;
-  width: 100%;
+  width: 394px;
+  height: 280px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
 }
-.restaurant_card a img {
-  background-color: black;
-  width: 100px;
-  height: 100px;
+.restaurant_card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.restaurant_card__New {
+  background-color: #99E2D0;
+  display: block;
+  position: absolute;
+  margin-top: 15px;
+  right: 35px;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 35px;
+  text-align: center;
+}
+.restaurant_card__New p {
+  color: #278870;
+  margin: 0;
+  padding-top: 8px;
 }
 .restaurant_card__bottom {
   display: flex;
   flex-direction: row;
-}
-.restaurant_card__bottom h3 {
-  justify-self: end;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-left: 15px;
 }
 .restaurant_card__bottom--p {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  flex: 1;
+}
+.restaurant_card__bottom p {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+.restaurant_card__bottom i {
+  justify-self: end;
+  padding-top: 15px;
+  padding-right: 20px;
+  color: purple;
+}
+
+header a {
+  color: blue;
 }/*# sourceMappingURL=main.css.map */
