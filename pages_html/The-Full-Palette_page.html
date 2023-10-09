@@ -6,71 +6,73 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto&family=Shrikhand&display=swap" rel="stylesheet"> 
         <script src="https://kit.fontawesome.com/322eb026d8.js" crossorigin="anonymous"></script>
         
     </head>
     <body>
         <header>
             <!--arrow takes user back to home page-->
-            <a href="index.html">AP</a>
+            <a href="index.html"><i class="fa-solid fa-arrow-left fa-xl"></i></a>
             <!--Logo goes here-->
             <img src="/Images/ohmyfood.png" alt="Logo for ohmyfood">
         </header>
-        <section>
+        <section class = "bg_img">
             <!--Just the background image-->
+            <img src="/Images/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
         </section>
-        <section>
+        <section class = "menu_bg">
             <!--This is where the menu is gonna take up the page-->
-            <div class="test">
+            <div class="menu_header">
                 <!--The Full palette and heart-->
-                <h1>The Full Palette</h1>
-                <p>HEART</p>
+                <div><h1><span style ="font-family: Shrikhand">The Full Palette</span></h1></div>
+                <i class="fa-regular fa-heart fa-2xl" ></i>
             </div>
             <div>
                 <!--Entrees section-->
-                <p>ENTREES</p>
-                <div>
+                <div class ="menu_section_title"><p>ENTREES</p></div>
+                <div class="menu_item_list">
                     <!--Menu items list-->
-                    <div>
+                    <div class="menu_item_card">
                         <!--menu item card-->
                         <a href="#">
-                            <div>
+                            <div class="menu_item_card--top">
                                 <!--top part of card-->
                                 <p>Escargot</p>
                             </div>
-                            <div>
+                            <div class="menu_item_card--bottom">
                                 <!--Bottom part of card-->
                                 <p>With southern French spices</p>
-                                <p>$25</p>
+                                <p><b>$25</b></p>
                             </div>
                         </a>
                     </div>
-                    <div>
+                    <div class="menu_item_card">
                         <!--menu item card-->
                         <a href="#">
-                            <div>
+                            <div class="menu_item_card--top">
                                 <!--top part of card-->
                                 <p>Duck Foie Gras</p>
                             </div>
-                            <div>
+                            <div class="menu_item_card--bottom">
                                 <!--Bottom part of card-->
                                 <p>With black truffle shavings</p>
-                                <p>$35</p>
+                                <p><b>$35</b></p>
                             </div>
                         </a>
                     </div>
-                    <div>
+                    <div class="menu_item_card">
                         <!--menu item card-->
                         <a href="#">
-                            <div>
+                            <div class="menu_item_card--top">
                                 <!--top part of card-->
                                 <p>Fried egg</p>
                             </div>
-                            <div>
+                            <div class="menu_item_card--bottom">
                                 <!--Bottom part of card-->
                                 <!--NOTE might need to make it where after a certain character limit/length, it cuts off-->
                                 <p>Seasoned with truffle cream and...</p>
-                                <p>$20</p>
+                                <p><b>$20</b></p>
                             </div>
                         </a>
                     </div>
@@ -78,103 +80,103 @@
             </div>
             <div>
                 <!--Main dish section-->
-                <p>MAIN DISH</p>
-                <div>
+                <div class ="menu_section_title"><p>MAIN DISH</p></div>
+                <div class="menu_item_list">
                     <!--Menu items list-->
-                    <div>
+                    <div class="menu_item_card">
                         <!--menu item card-->
                         <a href="#">
-                            <div>
+                            <div class="menu_item_card--top">
                                 <!--top part of card-->
                                 <p>Herb-Encrusted Steak</p>
                             </div>
-                            <div>
+                            <div class="menu_item_card--bottom">
                                 <!--Bottom part of card-->
                                 <p>With delicately sliced and seasoned veg...</p>
-                                <p>$40</p>
+                                <p><b>$40</b></p>
                             </div>
                         </a>
                     </div>
-                    <div>
+                    <div class="menu_item_card">
                         <!--menu item card-->
                         <a href="#">
-                            <div>
+                            <div class="menu_item_card--top">
                                 <!--top part of card-->
                                 <p>Ox Tail Shepard's Pie</p>
                             </div>
-                            <div>
+                            <div class="menu_item_card--bottom">
                                 <!--Bottom part of card-->
                                 <p>With black truffle and parsnips</p>
-                                <p>$35</p>
+                                <p><b>$35</b></p>
                             </div>
                         </a>
                     </div>
-                    <div>
+                    <div class = "menu_item_card">
                         <!--menu item card-->
                         <a href="#">
-                            <div>
+                            <div class="menu_item_card--top">
                                 <!--top part of card-->
                                 <p>Filet of Sole</p>
                             </div>
-                            <div>
+                            <div class="menu_item_card--bottom">
                                 <!--Bottom part of card-->
                                 <p>With citrus dressing</p>
-                                <p>$44</p>
+                                <p><b>$44</b></p>
                             </div>
                         </a>
                     </div>
                 </div>
             </div>
-            <div>
+            <div class ="Desserts">
                 <!--Desserts section-->
-                <p>Desserts</p>
-                <div>
+                <div class ="menu_section_title"><p>DESSERTS</p></div>
+                <div class="menu_item_list">
                     <!--Menu items list-->
-                    <div>
+                    <div class="menu_item_card">
                         <!--menu item card-->
                         <a href="#">
-                            <div>
+                            <div class="menu_item_card--top">
                                 <!--top part of card-->
                                 <p>Paris-Brest</p>
                             </div>
-                            <div>
+                            <div class="menu_item_card--bottom">
                                 <!--Bottom part of card-->
                                 <p>Revisited</p>
-                                <p>$18</p>
+                                <p><b>$18</b></p>
                             </div>
                         </a>
                     </div>
-                    <div>
+                    <div class="menu_item_card">
                         <!--menu item card-->
                         <a href="#">
-                            <div>
+                            <div class="menu_item_card--top">
                                 <!--top part of card-->
                                 <p>Chocolate Macaroons</p>
                             </div>
-                            <div>
+                            <div class="menu_item_card--bottom">
                                 <!--Bottom part of card-->
                                 <p>With vanilla ice cream</p>
-                                <p>$22</p>
+                                <p><b>$22</b></p>
                             </div>
                         </a>
                     </div>
-                    <div>
+                    <div class="menu_item_card">
                         <!--menu item card-->
                         <a href="#">
-                            <div>
+                            <div class="menu_item_card--top">
                                 <!--top part of card-->
                                 <p>Chocolate Mousse</p>
                             </div>
-                            <div>
+                            <div class="menu_item_card--bottom">
                                 <!--Bottom part of card-->
                                 <p>With spices and black truffle</p>
-                                <p>$23</p>
+                                <p><b>$23</b></p>
                             </div>
                         </a>
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="explore">
                 <!--Order button-->
                 <a href="#"><p>Order</p></a>
             </div>
