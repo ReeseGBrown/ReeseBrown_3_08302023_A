@@ -8,17 +8,43 @@
     align-items: center;
     flex-direction: column;
     margin-bottom: 40px;
+    p {
+        font-weight: bold;
+    }
     
 }
 .rounded-component {
+    display: flex;
+    flex-direction: row;
+   
+    align-items: center;
     background-color: rgb(241, 241, 241);
-    width: 90%;
+    width: 354px;
     padding-top: 10px;
     padding-bottom:10px;
     border-radius: 20px;
     margin-bottom: 20px;
-    text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    &--purple_circle {
+        display: block;
+        position: relative;
+        right: 15px;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        background-color: $Primary;
+        text-align: center;
+        p {
+            color:white;
+            position: relative;
+            bottom: 10px;
+        }
+    }
+    i {
+        color: rgb(124, 124, 124);
+        padding-right: 25px;
+        padding-left: 10px;
+    }
 }
 .restaurant-background {
     background-color: rgb(241, 241, 241);

@@ -10,6 +10,8 @@ header {
 .bg_img {
     img {
         width: 100%;
+        height: 290px;
+        object-fit: cover;
         margin-bottom: -60px;
         position: relative;
         z-index: -12;
@@ -32,6 +34,9 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    h1 {
+        width: 270px;
+    }
     i {
         display: block;
         position: relative;
@@ -40,11 +45,11 @@ header {
     }
 }
 .menu_section_title {
-    display: flex;
-    flex-direction: row;
+
     p {
         padding-bottom: 5px;
         border-bottom: 3px solid $Tertiary;
+
         width: 40px;
     }
 }
@@ -71,6 +76,7 @@ header {
         p {
             font-weight:bold;
             font-size: 17px;
+            width: 250px;
         }
     }
     &--bottom {
