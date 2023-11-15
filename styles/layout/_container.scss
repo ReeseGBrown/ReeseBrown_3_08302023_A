@@ -1,6 +1,7 @@
 .HowItWorks {
     margin-left: 20px;
     margin-right: $page_margin;
+
 }
 .instruction_list {
     display: flex;
@@ -11,6 +12,7 @@
     p {
         font-weight: bold;
     }
+
     
 }
 .rounded-component {
@@ -45,6 +47,9 @@
         padding-right: 25px;
         padding-left: 10px;
     }
+    &:hover {
+        background-color: lighten($Primary, 30%);
+    }
 }
 .restaurant-background {
     background-color: rgb(241, 241, 241);
@@ -56,10 +61,14 @@
 .card_list {
     display: flex;
     flex-direction: column;
-
+    align-items: center;
+    h2 {
+        align-self: start;
+    }
 }
 .restaurant_card {
     background-color: white;
+    position: relative;
     width:394px;
     height: 280px;
     border-radius: 15px;
@@ -90,7 +99,7 @@
     }
     &__bottom {
         display:flex;
-
+        position: relative;
         flex-direction: row;
         justify-content: space-between;
         padding-top:15px;
@@ -109,7 +118,26 @@
 
             padding-top: 15px;
             padding-right: 20px;
-            color: purple;
+            
+            left:350px;
+            
         }
+    }
+}
+#heartOutline {
+    
+    position: relative;
+    left:44px;
+    color:black;
+    &:hover {
+        display: none;
+    }
+}
+#inviHeart {
+    color:rgb(255, 249, 249);
+    
+    &:hover{
+        color: $Secondary;
+        transform: scale(1.1);
     }
 }

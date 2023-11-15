@@ -60,17 +60,41 @@ header {
 .menu_item_card {
     background-color: white;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     border-radius: 15px;
     padding-left: 15px;
-    padding-right: 25px;
-    padding-bottom: 15px;
-    padding-top: 10px;
+    
     box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
     margin-bottom: 15px;
+    overflow: hidden;
+    &:hover {
+        & > .menu_item_card--hidden_button {
+            animation: intoFrame .5s both;
+            
+        }
+        & > .menu_item_card--hidden_button i {
+            animation: rotation .5s both;
+            
+        }
+        & > .menu_item_card--e {
+            & > .menu_item_card--bottom {
+                & > .menu_item_card--bottom--money {
+                    animation: intoFrame .5s both;
+                }
+            }
+        }
+    }
     p {
         margin-bottom: 0;
         margin-top: 5px;
+    }
+    &--e {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 15px;
+        padding-top: 10px;
+        padding-right: 25px;
+        width: 100%;
     }
     &--top {
         p {
@@ -83,11 +107,68 @@ header {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        
         p {
             font-size: 15px;
         }
+        &--real {
+
+        }
+        &--num1 {
+            display: none;
+            background-color: orange;
+        }
+        &--num2 {
+            display: none;
+            background-color: lime;
+        }
+        &--money {
+            position: relative;
+            left: 70px;
+          
+        }
     }
+    &--hidden_button {
+        position: relative;
+        left: 70px;
+        width: 80px;
+        background-color: $Tertiary;
+        p {
+            color: $Tertiary;
+        }
+        i {
+            color:$Tertiary;
+            background-color: white;
+            padding: 5px;
+            border-radius: 100%;
+            position: relative;
+            left: 19px;
+            
+        }
+    }
+    /*&:hover {
+        transform: translate(40px, 20px);
+        transition-property: transform;
+        transition-duration: 300ms;
+    }*/
 }
 .Desserts {
     padding-bottom: 40px;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(72deg);
+    }
+   
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes intoFrame {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(-70px, 0);
+    }
 }

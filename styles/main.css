@@ -140,6 +140,9 @@ footer li i {
   padding-right: 25px;
   padding-left: 10px;
 }
+.rounded-component:hover {
+  background-color: #e4d5f6;
+}
 
 .restaurant-background {
   background-color: rgb(241, 241, 241);
@@ -152,10 +155,15 @@ footer li i {
 .card_list {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+.card_list h2 {
+  align-self: start;
 }
 
 .restaurant_card {
   background-color: white;
+  position: relative;
   width: 394px;
   height: 280px;
   border-radius: 15px;
@@ -187,6 +195,7 @@ footer li i {
 }
 .restaurant_card__bottom {
   display: flex;
+  position: relative;
   flex-direction: row;
   justify-content: space-between;
   padding-top: 15px;
@@ -204,7 +213,24 @@ footer li i {
 .restaurant_card__bottom i {
   padding-top: 15px;
   padding-right: 20px;
-  color: purple;
+  left: 350px;
+}
+
+#heartOutline {
+  position: relative;
+  left: 44px;
+  color: black;
+}
+#heartOutline:hover {
+  display: none;
+}
+
+#inviHeart {
+  color: rgb(255, 249, 249);
+}
+#inviHeart:hover {
+  color: #FF79DA;
+  transform: scale(1.1);
 }
 
 header a {
@@ -266,18 +292,38 @@ header a {
 .menu_item_card {
   background-color: white;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   border-radius: 15px;
   padding-left: 15px;
-  padding-right: 25px;
-  padding-bottom: 15px;
-  padding-top: 10px;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 15px;
+  overflow: hidden;
+  /*&:hover {
+      transform: translate(40px, 20px);
+      transition-property: transform;
+      transition-duration: 300ms;
+  }*/
+}
+.menu_item_card:hover > .menu_item_card--hidden_button {
+  animation: intoFrame 0.5s both;
+}
+.menu_item_card:hover > .menu_item_card--hidden_button i {
+  animation: rotation 0.5s both;
+}
+.menu_item_card:hover > .menu_item_card--e > .menu_item_card--bottom > .menu_item_card--bottom--money {
+  animation: intoFrame 0.5s both;
 }
 .menu_item_card p {
   margin-bottom: 0;
   margin-top: 5px;
+}
+.menu_item_card--e {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-right: 25px;
+  width: 100%;
 }
 .menu_item_card--top p {
   font-weight: bold;
@@ -292,7 +338,53 @@ header a {
 .menu_item_card--bottom p {
   font-size: 15px;
 }
+.menu_item_card--bottom--num1 {
+  display: none;
+  background-color: orange;
+}
+.menu_item_card--bottom--num2 {
+  display: none;
+  background-color: lime;
+}
+.menu_item_card--bottom--money {
+  position: relative;
+  left: 70px;
+}
+.menu_item_card--hidden_button {
+  position: relative;
+  left: 70px;
+  width: 80px;
+  background-color: #99E2D0;
+}
+.menu_item_card--hidden_button p {
+  color: #99E2D0;
+}
+.menu_item_card--hidden_button i {
+  color: #99E2D0;
+  background-color: white;
+  padding: 5px;
+  border-radius: 100%;
+  position: relative;
+  left: 19px;
+}
 
 .Desserts {
   padding-bottom: 40px;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(72deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes intoFrame {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-70px, 0);
+  }
 }/*# sourceMappingURL=main.css.map */
