@@ -233,6 +233,28 @@ footer li i {
   transform: scale(1.1);
 }
 
+@keyframes test {
+  from {
+    visibility: hidden;
+  }
+  to {
+    visibility: visible;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .instruction_list {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .rounded-component {
+    margin-right: 20px;
+  }
+  .card_list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
 header a {
   color: rgb(0, 0, 0);
   display: block;
@@ -313,6 +335,9 @@ header a {
 .menu_item_card:hover > .menu_item_card--e > .menu_item_card--bottom > .menu_item_card--bottom--money {
   animation: intoFrame 0.5s both;
 }
+.menu_item_card:hover > .menu_item_card--e > .menu_item_card--bottom > .menu_item_card--bottom--real {
+  animation: hidingText 0.5s both;
+}
 .menu_item_card p {
   margin-bottom: 0;
   margin-top: 5px;
@@ -338,13 +363,11 @@ header a {
 .menu_item_card--bottom p {
   font-size: 15px;
 }
-.menu_item_card--bottom--num1 {
-  display: none;
-  background-color: orange;
-}
-.menu_item_card--bottom--num2 {
-  display: none;
-  background-color: lime;
+.menu_item_card--bottom--real {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 270px;
 }
 .menu_item_card--bottom--money {
   position: relative;
@@ -368,6 +391,18 @@ header a {
   left: 19px;
 }
 
+.load1 {
+  animation: loadingPage 1s both;
+}
+
+.load2 {
+  animation: loadingPage 2s both;
+}
+
+.load3 {
+  animation: loadingPage 3s both;
+}
+
 .Desserts {
   padding-bottom: 40px;
 }
@@ -386,5 +421,32 @@ header a {
   }
   to {
     transform: translate(-70px, 0);
+  }
+}
+@keyframes hidingText {
+  to {
+    width: 230px;
+  }
+}
+@keyframes loadingPage {
+  from {
+    opacity: 0;
+    transform: translate(0, 20px);
+  }
+  to {
+    opacity: 100%;
+    transform: translate(0, 0);
+  }
+}
+@media only screen and (min-width: 992px) {
+  .menu_item_list {
+    align-items: center;
+  }
+  .menu_item_card {
+    width: 600px;
+  }
+  .menu_section_title {
+    display: flex;
+    justify-content: center;
   }
 }/*# sourceMappingURL=main.css.map */

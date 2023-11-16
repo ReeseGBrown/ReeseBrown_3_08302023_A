@@ -1,3 +1,5 @@
+
+
 .HowItWorks {
     margin-left: 20px;
     margin-right: $page_margin;
@@ -139,5 +141,30 @@
     &:hover{
         color: $Secondary;
         transform: scale(1.1);
+    }
+}
+
+@keyframes test {
+    from {
+        visibility: hidden;
+    }
+    to {
+        visibility: visible;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .instruction_list {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .rounded-component {
+        margin-right: 20px;
+    }
+    .card_list {
+       
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
     }
 }

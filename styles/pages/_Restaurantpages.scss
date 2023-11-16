@@ -81,6 +81,10 @@ header {
                 & > .menu_item_card--bottom--money {
                     animation: intoFrame .5s both;
                 }
+                & > .menu_item_card--bottom--real {
+                    animation: hidingText .5s both;
+                }
+                
             }
         }
     }
@@ -112,15 +116,11 @@ header {
             font-size: 15px;
         }
         &--real {
-
-        }
-        &--num1 {
-            display: none;
-            background-color: orange;
-        }
-        &--num2 {
-            display: none;
-            background-color: lime;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 270px;
+            
         }
         &--money {
             position: relative;
@@ -152,6 +152,15 @@ header {
         transition-duration: 300ms;
     }*/
 }
+.load1 {
+    animation: loadingPage 1s both;
+}
+.load2 {
+    animation: loadingPage 2s both;
+}
+.load3 {
+    animation: loadingPage 3s both;
+}
 .Desserts {
     padding-bottom: 40px;
 }
@@ -170,5 +179,34 @@ header {
     }
     to {
         transform: translate(-70px, 0);
+    }
+}
+@keyframes hidingText {
+   
+    to {
+        width: 230px;
+    }
+}
+@keyframes loadingPage {
+    from {
+        opacity: 0;
+        transform: translate(0,20px);
+    }
+    to {
+        opacity: 100%;
+        transform: translate(0, 0);
+    }
+}
+@media only screen and (min-width: 992px) {
+    .menu_item_list {
+        align-items: center;
+    }
+    .menu_item_card {
+        width: 600px;
+
+    }
+    .menu_section_title {
+        display: flex;
+        justify-content: center;
     }
 }
